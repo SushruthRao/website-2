@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Gokarna Seva – Travel for Cause</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">Gokarna Seva</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#participate">Participate</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Travel for a Cause</h1>
+      <p>Wellness, heritage & coastal ecology come together in Gokarna.</p>
+      <a class="cta-btn" href="#programs">Explore Programs</a>
+    </section>
+
+    <section class="vision-mission" id="vision">
+      <h2>Our Vision</h2>
+      <p>Create a coastal community where conscious travel regenerates the environment, empowers locals, and inspires service for all.</p>
+      <h3>Mission</h3>
+      <ul>
+        <li>Foster a self-sustaining, wellness-focused ecosystem.</li>
+        <li>Promote health for all via preventive care and awareness.</li>
+        <li>Empower farmers, artisans, and youth with new livelihoods.</li>
+        <li>Set a global model for travel <b>with</b> purpose.</li>
+      </ul>
+    </section>
+
+    <section class="cards-section" id="programs">
+      <h2>Core Programs</h2>
+      <div class="card-grid">
+        <div class="card" onclick="openModal('Heritage Stay & Eco-Tents', 'Eco-conscious beachfront and forest accommodations using local materials and promoting minimal-impact living.')">
+          <h4>Heritage Stay & Eco-Tents</h4>
+        </div>
+        <div class="card" onclick="openModal('Community Health & Wellness', 'Health kiosks, preventive camps, telemedicine, and wellness retreats with yoga and traditional therapies.')">
+          <h4>Community Health & Wellness</h4>
+        </div>
+        <div class="card" onclick="openModal('Artisan & Cultural Revival', 'Craft workshops, permanent gallery, and support for branding, packaging, and e-commerce for local artisans.')">
+          <h4>Artisan & Cultural Revival</h4>
+        </div>
+        <div class="card" onclick="openModal('Agricultural Experience: Adopt a Land', 'Visitors can adopt a plot, grow veggies, join farm-to-fork workshops, and enjoy agro-wellness experiences.')">
+          <h4>Agricultural Experience</h4>
+        </div>
+        <div class="card" onclick="openModal('Workshops & Exhibitions', 'Hands-on programs and knowledge festivals led by creatives, ecologists, and doctors.')">
+          <h4>Workshops & Exhibitions</h4>
+        </div>
+        <div class="card" onclick="openModal('Farm-to-Table Café', 'Coastal organic café highlighting traditional and millet-based cuisine from locally grown ingredients.')">
+          <h4>Farm-to-Table Café</h4>
+        </div>
+        <div class="card" onclick="openModal('Environmental & Beach Conservation', 'Beach cleaning, mangrove restoration, turtle protection, and creative upcycling workshops.')">
+          <h4>Beach Conservation</h4>
+        </div>
+        <div class="card" onclick="openModal('Travel for a Cause', 'Ready-made volunteering packages: support health camps, artisan training, and green drives. Every traveler contributes to community funds.')">
+          <h4>Travel for a Cause</h4>
+        </div>
+        <div class="card" onclick="openModal('Annual Festival', 'Art, wellness, farm-to-table, coastal biodiversity, and recognition for impactful seva.')">
+          <h4>Annual Beach & Farm Festival</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="participate" id="participate">
+      <h2>How to Participate</h2>
+      <ul>
+        <li>Students: Volunteer in health, art, or farm programs; internships; research.</li>
+        <li>NGOs: Partner in programs or help replicate the model.</li>
+        <li>Corporates: Sponsor kiosks or eco-tents, organize employee retreats.</li>
+        <li>Travelers & Families: Join 'Travel for a Cause', adopt land, attend craft/farm workshops.</li>
+        <li>Artists, Chefs, Designers: Lead creative residencies and mentor locals.</li>
+        <li>Local Community: Collaborate for equitable benefit sharing.</li>
+      </ul>
+    </section>
+
+    <section class="impact" id="impact">
+      <h2>Our Impact Goals</h2>
+      <div class="impact-stats">
+        <div><span>3,000+</span>Health & wellness beneficiaries</div>
+        <div><span>20+</span>Beach clean drives/year</div>
+        <div><span>500+</span>Trees planted</div>
+        <div><span>50+</span>Visitors adopted land plots</div>
+        <div><span>100+</span>Artisans engaged</div>
+        <div><span>70+</span>Locals employed</div>
+      </div>
+      <p>Majority of proceeds reinvested in health, environment, and livelihoods.</p>
+    </section>
+
+  </main>
+
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Gokarna Seva | Site by Aarogya Seva Volunteers
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
