@@ -775,3 +775,62 @@ footer {
   margin: 8px 0;
   line-height: 1.6;
 }
+/* Destination Image Styling */
+.dest-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, height 0.5s ease, box-shadow 0.5s ease;
+  overflow: hidden;
+}
+
+/* Expand image significantly on card hover */
+.destination-card:hover .dest-image {
+  transform: scale(1.05);
+  height: 450px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Hero content blur background */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 90%;
+}
+
+.hero-logo {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.hero h1, .hero p, .hero .cta-btn {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ecosystem Section Images */
+.ecosystem-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ecosystem-image:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
